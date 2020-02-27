@@ -1,0 +1,32 @@
+{
+  "name": "ln-test",
+  "version": "1.0.0",
+  "description": "测试专用库",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-load-plugins": "^2.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/langnang/ln-test.git"
+  },
+  "keywords": [],
+  "author": "LN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/langnang/ln-test/issues"
+  },
+  "homepage": "https://github.com/langnang/ln-test#readme"
+}
