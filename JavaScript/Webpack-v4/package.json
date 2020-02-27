@@ -1,0 +1,54 @@
+{
+  "name": "ln-test-webpack4.x",
+  "version": "0.0.1",
+  "description": "测试专用库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:dev && npm run build:prod",
+    "build:prod": "webpack --config webpack.prod.conf.js",
+    "build:dev": "webpack --config webpack.dev.conf.js",
+    "build:watch": "webpack --watch",
+    "build:color": "webpack --colors",
+    "build:test": "webpack --config webpack.test.conf.js",
+    "build:test:watch": "webpack --config webpack.test.conf.js --watch",
+    "server": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/langnang/ln-test.git"
+  },
+  "author": "LN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/langnang/ln-test/issues"
+  },
+  "homepage": "https://github.com/langnang/ln-test#readme",
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^3.1.0",
+    "eslint-loader": "^2.2.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^4.1.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "json5-loader": "^3.0.0",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.39.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
+  }
+}
