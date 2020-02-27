@@ -1,0 +1,25 @@
+{
+  "name": "ln-test",
+  "version": "1.0.0",
+  "description": "测试专用库",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/langnang/ln-test.git"
+  },
+  "keywords": [],
+  "author": "LN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/langnang/ln-test/issues"
+  },
+  "homepage": "https://github.com/langnang/ln-test#readme"
+}
