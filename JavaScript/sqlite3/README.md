@@ -15,6 +15,8 @@
   - [Serialize](#serialize)
 - [Precompile](#precompile)
   - [Prepare](#prepare)
+- [Expand](#expand)
+  - [If the table exists](#if-the-table-exists)
 - [Error](#error)
 
 ## Install
@@ -314,6 +316,14 @@ db.serialize([callback]);
 
 ```js
 db.prepare(sql, [param, ...], [callback])
+```
+
+## Expand
+
+### If the table exists
+
+```sql
+SELECT COUNT(*) FROM sqlite_master where type='table' and name='表名'
 ```
 
 ## Error
