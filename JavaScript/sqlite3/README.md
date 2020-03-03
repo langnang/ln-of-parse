@@ -88,9 +88,9 @@ Database.close([callback]);
 **Examples**
 
 ```js
-db.close(function(err)=>{
-  if(err)throw err;
-})
+db.close(function(err) {
+  if (err) throw err;
+});
 ```
 
 ### Run
@@ -174,7 +174,7 @@ db.get(sql, [param, ...], [callback]);
 **Examples**
 
 ```js
-db.get("select * from user", (err, row) => {
+db.get("select * from user", function(err, row) {
   if (err) throw err;
   console.log(row.id); //0
 });
@@ -233,7 +233,7 @@ db.all(sql, [param, ...], [callback])
 **Examples**
 
 ```js
-db.all("select * from user", (err, rows) => {
+db.all("select * from user", function(err, rows) {
   if (err) throw err;
   console.log(rows);
 });
@@ -264,7 +264,7 @@ db.each(sql, [param, ...], [callback], [complete])
 ```js
 db.each(
   "select * from user",
-  (err, row) => {
+  function(err, row) {
     if (err) throw err;
     console.log(row);
   },
