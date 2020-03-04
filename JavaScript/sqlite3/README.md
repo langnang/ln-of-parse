@@ -329,6 +329,6 @@ SELECT COUNT(*) FROM sqlite_master where type='table' and name='表名'
 ## Error
 
 1. `node-pre-gyp install --fallback-to-build`
-   > `npm install -g node-gyp`
+   > `npm install -g node-gyp`或切换镜像`cnpm install`
 2. `Error: SQLITE_CANTOPEN: unable to open database file`
    > authority or path error
