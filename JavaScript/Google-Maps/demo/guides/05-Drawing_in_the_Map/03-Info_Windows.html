@@ -29,30 +29,22 @@
     <script>
         function initMap() {
 
-            var uluru = { lat: -25.363, lng: 131.044 };
+            var advantech = { lat: 25.086, lng: 121.586 };
             var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 4,
-                center: uluru
+                zoom: 12,
+                center: advantech
             });
 
             var contentString = '<div id="content">' +
                 '<div id="siteNotice">' +
                 '</div>' +
-                '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
+                '<h1 id="firstHeading" class="firstHeading">Advantech</h1>' +
                 '<div id="bodyContent">' +
-                '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-                'sandstone rock formation in the southern part of the ' +
-                'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) ' +
-                'south west of the nearest large town, Alice Springs; 450&#160;km ' +
-                '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major ' +
-                'features of the Uluru - Kata Tjuta National Park. Uluru is ' +
-                'sacred to the Pitjantjatjara and Yankunytjatjara, the ' +
-                'Aboriginal people of the area. It has many springs, waterholes, ' +
-                'rock caves and ancient paintings. Uluru is listed as a World ' +
-                'Heritage Site.</p>' +
-                '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-                'https://en.wikipedia.org/w/index.php?title=Uluru</a> ' +
-                '(last visited June 22, 2009).</p>' +
+                '<p><b>UShop+智能零售整合管理平台</b>, 专为零售及服务业设计的云端管理服务平台，优化门店运营效益效率，提供客户优质的消费体验。' +
+                '<p>links: <a href="https://www.advantech.com.cn/solutions/iretail?utm_source=CorpSiteHomepage-InPage&utm_medium=link&utm_campaign=CorpSiteHomepage-SolutionsClicks">' +
+                'UShop+智能零售整合管理平台</a> ' +
+                '</p>' +
+                '<img src="./../../../assets/advantech-ushop.png" style="width:100%"/>' +
                 '</div>' +
                 '</div>';
 
@@ -61,9 +53,9 @@
             });
 
             var marker = new google.maps.Marker({
-                position: uluru,
+                position: advantech,
                 map: map,
-                title: 'Uluru (Ayers Rock)'
+                title: 'Advantech'
             });
             marker.addListener('click', function () {
                 infowindow.open(map, marker);
