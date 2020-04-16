@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation | HTML</title>
+</head>
+
+<body>
+
+    <script>
+        window.addEventListener('load', loadDemo, true);
+
+        function loadDemo() {
+            if (navigator.geolocation) {
+                navigator.geolocation.watchPosition(
+                    updateLocation,
+                    handleLocationError,
+                    { maximumAge: 20000 }
+                );
+            }
+        }
+
+        function updateLocation(position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            var accuracy = position.coords.accuracy;
+            var timestamp = position.timestamp;
+        }
+    </script>
+</body>
+
+</html>
