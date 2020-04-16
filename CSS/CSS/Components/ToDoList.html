@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList | CSS Components</title>
+
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .todo-list {
+            list-style: none;
+            font-size: 20px;
+            padding: 1rem 2rem;
+        }
+
+        .todo-list li {
+            padding: 0.3rem 0;
+        }
+
+        .todo-list li::before {
+            content: "🗹  ";
+            color: aqua;
+        }
+
+        .todo-list li.completed::before {
+            content: "✔ ";
+            text-decoration: none;
+            color: greenyellow;
+        }
+
+        .todo-list li.completed {
+            text-decoration: line-through;
+            color: #bdbdbd;
+        }
+    </style>
+    <header>
+
+    </header>
+    <main>
+        <div>
+            <h3>待办事项</h3>
+            <ul class="todo-list">
+                <li>待办任务1</li>
+                <li>待办任务2</li>
+                <li>待办任务3</li>
+                <li>待办任务4</li>
+                <li>待办任务5</li>
+            </ul>
+        </div>
+        <div>
+            <h3>完成事项</h3>
+            <ul class="todo-list">
+                <li class="completed">完成任务1</li>
+                <li class="completed">完成任务2</li>
+                <li class="completed">完成任务3</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
