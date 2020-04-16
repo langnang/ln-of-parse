@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas | HTML</title>
+</head>
+
+
+<body>
+    <button onClick="line()">线条</button>
+    <button>圆点</button>
+    <button>渐变</button>
+    <button>图像</button>
+    <canvas id="myCanvas" width="100vw" height="80vh" style="width:90vw;height: 80vh;"></canvas>
+    <script>
+        var myCanvas = document.getElementById("myCanvas");
+        var context = myCanvas.getContext("2d");
+        function emptyCanvas(canvas) {
+            var cxt = canvas.getContext("2d");
+        }
+        function line() {
+            var cxt = myCanvas.getContext("2d");
+            cxt.moveTo(10, 10);
+            cxt.lineTo(150, 50);
+            cxt.lineTo(10, 50);
+            cxt.stroke();
+        }
+        function circle() { }
+        function gradient() { }
+        function img() { }
+    </script>
+</body>
+
+</html>
