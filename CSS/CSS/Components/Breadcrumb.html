@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breadcrumb | CSS Components</title>
+
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .breadcrumb {
+            font-size: 1.6rem;
+            color: #fff;
+        }
+
+        .breadcrumb .breadcrumb-item:first-child {
+            color: #82fcfd;
+        }
+
+        .breadcrumb .breadcrumb-item:first-child::before {
+            content: " » ";
+        }
+
+        .breadcrumb .breadcrumb-item::after {
+            content: " /";
+            color: #ef6eae;
+        }
+
+        .breadcrumb a:last-child::after {
+            content: "";
+        }
+    </style>
+    <header>
+
+    </header>
+    <main>
+        <div class="breadcrumb">
+            <a class="breadcrumb-item" href="">首页</a>
+            <a class="breadcrumb-item" href="">前端</a>
+            <a class="breadcrumb-item" href="">教程</a>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
