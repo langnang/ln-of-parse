@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM to Image</title>
+
+</head>
+
+<div id="my-node">
+    <h3>DOM to Image</h3>
+</div>
+
+<body>
+    <script src="./dom-to-image.min.js"></script>
+    <script>
+        var node = document.getElementById('my-node');
+        domtoimage.toPng(node)
+            .then(function (dataUrl) {
+                var img = new Image();
+                img.src = dataUrl;
+                document.body.appendChild(img);
+            })
+            .catch(function (error) {
+                console.error('oops, something went wrong!', error);
+            });
+
+        domtoimage.toBlob(document.getElementById('my-node'))
+            .then(function (blob) {
+                window.saveAs(blob, 'my-node.png');
+            });
+        domtoimage.toJpeg(document.getElementById('my-node'), { quality: 0.95 })
+            .then(function (dataUrl) {
+                var link = document.createElement('a');
+                link.download = 'my-image-name.jpeg';
+                link.href = dataUrl;
+                link.click();
+            });
+    </script>
+</body>
+
+</html>
